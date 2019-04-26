@@ -1,0 +1,31 @@
+<section>
+	<div class="container">
+		<div class="form-section sign-up-form">
+		  <h2> Create an account </h2>
+		  <form #form="ngForm" (submit)="submitUser(form.value)">
+		  	 <div class="form-group name-block">
+		  	  <div class="fname-block">
+				  <input type="text" class="form-control fname" name="fname"  placeholder="First Name"  [(ngModel)]="fname"  />
+				  <span name="fname_error" class="error">{{ fname_error }}</span>
+              </div>
+               <div class="lname-block">
+	              <input type="text" class="form-control lname" name="lname"  placeholder="Surname" [(ngModel)]="lname"   />
+				  <span name="lname_error" class="error">{{ lname_error }}</span>
+	           </div>
+            </div>
+            <div class="form-group email-block">
+			  <input type="text" class="form-control" name="email" placeholder="Email" [(ngModel)]="email"   />
+			  <span name="email_error" class="error">{{ email_error }}</span>
+            </div>
+
+            <div class="form-group password-block">
+			  <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password"   />
+			  <span name="password_error" class="error">{{ password_error }}</span>
+            </div>
+           <div class="form-group submit-block">
+               <input type="submit" class="signup-submit" value="SignUp"/>
+            </div>
+		  </form>
+		</div>
+	</div>
+</section>

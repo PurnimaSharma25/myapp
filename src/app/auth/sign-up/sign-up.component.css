@@ -1,0 +1,83 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #eff0f2;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.form-section h2{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.form-section form{
+    width: 100%;
+}
+
+.form-section .form-group{
+}
+
+.form-section input{
+  height:30px;
+}
+
+.form-section .fname-block{
+    width: 45%;
+    float: left;
+  }
+
+.form-section .lname-block{
+    width: 45%;
+    float: right;
+    margin-bottom: 10px;
+
+}
+
+.form-section .fname-block input, .form-section .lname-block input{
+    width: 100%;
+    padding-left: 2%;
+    margin-bottom: 6px;
+}
+
+.error{
+  color: red;
+  margin-top:3px;
+}
+
+.form-section .email-block, .form-section .password-block{
+    width: 100%;
+    
+}
+
+
+.form-section .email-block input, .form-section .password-block input{
+    width: 98%;
+    margin-bottom: 10px;
+    padding-left: 2%;
+}
+
+.signup-submit{
+  width: 20%;
+}
+
+input.ng-touched.ng-invalid {
+  border: 2px dashed red;
+}
+

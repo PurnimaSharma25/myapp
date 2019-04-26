@@ -1,0 +1,56 @@
+.main-head{
+	  margin-bottom: 2%;
+    margin-top: 2%;
+    display: block;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-form{
+	width: 100%;
+	display: flex;
+	border: 2px solid #eff0f2;
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.login-form .form-group{
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.login-form .email-block{
+   float: left;
+   width: 40%;
+ }
+
+ .login-form .password-block{
+    width: 40%;
+ }
+
+.login-form label{
+	display: block;
+  margin-bottom: 3px;
+  width: 80%;
+}
+
+.login-form input{
+  width: 80%;
+  height: 30px;
+  padding-left: 2%;
+}
+
+.login-form  .submit-block{
+  width: 15%;
+}

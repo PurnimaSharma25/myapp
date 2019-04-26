@@ -1,0 +1,46 @@
+ a{
+    text-decoration: none; 
+ }
+ section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+ }
+
+ .logout{
+        background-color: #318C83;
+        border-radius: 10px;
+        color: white;
+        box-shadow: none;
+        height: 25px;
+        width: 82px;
+        text-align: center;
+        padding-top: 5px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+  }
+  button{
+    margin-left: 10px;
+  }
+
+  table{
+    margin-top: 3%
+  }
+
+  td{
+    width: 80%;
+  }
+
+  .add-friend{
+    margin-top: 2%;
+  }
+
+  .add-friend input{
+    padding-left: 2%
+  }
+  .delete-link{
+    color: #318C83;
+    cursor: pointer;
+  }

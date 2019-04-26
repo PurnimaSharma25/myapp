@@ -1,0 +1,20 @@
+<header>
+ <span>
+   <a (click)="onLogout()"class="logout"> Logout </a>
+  </span>
+</header>
+<section>
+    <h1> Hi {{ currentUser.fname }}, here are your friends </h1>
+    <div class="add-friend">
+      <input type="text"  [(ngModel)]="friend"/><button (click)="addFriend()"> Add Friends </button>
+    </div>
+
+    <table>
+      <tr *ngFor="let friend of currentUser['friends']">
+        <td> {{ friend['fname'] }}  {{ friend['lname'] }}</td>
+        <td><a (click)="removeFriend(friend['email'])" class="delete-link"> Delete </a></td>
+      </tr>
+
+    </table>
+</section>
+

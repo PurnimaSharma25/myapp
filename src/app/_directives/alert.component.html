@@ -1,0 +1,26 @@
+<div *ngIf="message" [ngClass]="{ 'alert': message, 'alert-success': message.type === 'success', 'alert-danger': message.type === 'error' }">{{message.text}}<span (click)="onhide()"><img alt="close" src="assets/img/close.png"></span></div>
+
+
+<style>
+  .alert{
+	margin-left: 40%;
+    padding: 1%;
+    width: 213px;
+    border-radius: 13px;
+    margin-top: 5px;
+   }
+
+   .alert-success{
+   	  background: #36c936;
+   }
+
+
+   .alert-danger{
+   	  background: #e97a7a;
+   }
+
+   .alert img{
+   	  height: 12px;
+      float: right;
+   }
+</style>
